@@ -5,9 +5,9 @@ File.open('makes_models.csv', 'a') {
 		|text| text.write("\nChevrolet, Malibu \nFord, Mustang \nFord, Taurus \nChevrolet, Cobalt \nRenault, Megan")
 	}
 
-CSV.open('makes_models.csv', 'r'). each do |make, model|
+CSV.open('makes_models.csv', 'r').each do |make, model|
 	if make != "Make" && model != "Model"
-		puts "Make: #{make} Model: #{model}"
+		puts "\"Make:#{make} Model:#{model}\""
 	end
 end
 
